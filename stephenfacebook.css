@@ -1,0 +1,100 @@
+/*CSS File for Facebook assignment*/
+body {
+	background-color: #edf0f5;
+}
+
+.app-nav-bar {
+	background-color: #3b5998;
+	height: 75px;
+	width: 100%;
+	border-bottom:1px solid #133783;
+}
+
+.footer {
+  background-color: #fff;
+  height: 150px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+/*Login button in the top navbar */
+.btnlogin {
+  font-size: 0.8rem;
+  width: 2.8rem;
+  color: #fff;
+  padding: 0px;
+}
+
+.signupwords {
+  color: #333;
+  font-family: 'Freight Sans', Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  /*line-height: 1.26;*/
+  margin-bottom: 20px;
+}
+
+/*rem is a relative meansurement and not absolute.
+It is great when catering for responsiveness. */
+.userpolicy {
+  font-size: 0.7rem;
+  color: #8c7792;
+  margin-top: 0rem;
+}
+
+/*Every anchor 'a' tag under userpolicy will adopt 
+the colour below. Therefore the links will take on 
+this new colour*/
+.userpolicy a {
+  color: #5b58b7;
+}
+
+#btn_signup {
+  color: #fff;
+  font-weight: bold;
+  width: 12rem;
+  margin-top: 1rem;
+  background-color: #5e984b;
+  border: 1px solid #3b6e22;
+}
+
+.creation {
+  font-weight: bold;
+}
+
+.formcontrl {
+  width: 70px;
+  font-size: 13px; 
+  height: 30px;
+  padding: 1px;
+}
+
+/* For the '+' sign in the footer */
+#add_lang {
+  background-color: grey;
+  border: 1px solid grey;
+  font-weight: bold;
+  width: 2rem;
+}
+
+.footerlinks {
+  font-size: 0.75rem;
+  margin-top: 0rem;
+}
+
+.button {
+  	/*background-color: #3b5998; /* Green */
+  	border: none;
+  	color: #3b5998;
+  	/*padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	cursor: pointer;*/
+}
+
+.button1 {
+  padding: 4px; 
+  border-radius: 25%;
+}
