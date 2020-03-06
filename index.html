@@ -1,13 +1,299 @@
 <!DOCTYPE html>
-<html lang=en>
+<html>
 <head>
-
-   <title>Clone of the Facebook Page</title>
-
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/stephenfacebook.css">
+	<!-- Link to the Icons stylesheet over the Internet. Note that version 5 requires payment while version 4 is free 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<title>Facebook - Log In or Sign Up</title>
 </head>
-<body>
 
-   <p><h1>The actual page will be put here: <br> for now we simply create the github pages link for submission.</h1></p>
+<body>
+	<!-- Assignment of reproducing the Facebook website as a demonstration of how much I've learned from HTML & CSS 
+	(bootstrap as a framework inclusive)-->
+
+	<!-- Top Section of the Facebook Website -->
+	<div class="app-nav-bar">
+		<div class="container">
+			<div class="row">
+				<!-- Add padding so that the content starts slights lower and not immediately like it is on the Facebook page -->
+				<div class="col-lg-7" style="padding-top: 15px; color: white">
+					<h1><strong>facebook</strong></h1>
+				</div>
+				<!-- Multiple column definitions to cater for various screen sizes -->
+				<div class="col-sd-12 col-md-12 col-lg-5" style="padding: 1px;">
+					<form>
+						<!-- This piece of code implements the loging of email & password using a table but never completed because
+						of time constraints. It was left with styling of the input fields and button.
+						<table>
+							<tbody>
+								<tr style="color: #fff; font size=1;">
+									<td><label for="email">Email or Phone</label></td>
+									<td><label for="password">Password</label></td>
+								</tr>
+								<tr>
+									<td><input type="email" name="email" id="email"></td>
+									<td><input type="password" name="password" id="password"></td>
+									<td><button class="btn btn-success btnlogin">Log In</button></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td style="color: #bbb;"><a href="https://www.facebook.com/recover/initiate?lwv=110&ars=royal_blue_bar">Forgot account?</a></td>
+								</tr>
+							</tbody>
+						</table> -->
+						<!-- This piece of code implements the login of email & password using container -->
+						<div class="container-fluid">
+							<div class="row" style="color: #fff; font size=1;">
+								<div class="col-lg-5">
+									Email or Phone <br>
+										<input type="text" name="email/phone" placeholder="">
+								</div>
+								<div class="col-lg-5">
+									Password <br>
+										<input type="password" name="password" placeholder=""><br>
+										<a href="" style="color: #bbb;">Forgot account?</a>
+								</div>
+								<div class="col-lg-2">
+									<br>
+										<!-- <input type="submit" name="login" value="Log In" style="background-color: #4272f5"> -->
+										<button class="btn btn-success btnlogin">Log In</button>
+								</div> 
+							</div>
+						</div>
+					</form>	
+				</div>
+			</div>
+		</div>
+	</div> 
+
+	<!-- Middle Section of the Facebook Website -->
+	
+	<div class="container" >
+		<div class="row" style="height:600px">
+			<!-- Left Side of Page -->
+			<div class="col-lg-7" style="padding-top:70px; margin-left:0px">
+				<h3>Connect with friends and the <br> world around you on Facebook.</h3><br><br>
+				<p><img src="./images/iconone.jpg">&nbsp &nbsp <b>See photos and updates</b> from friends in News Feed.<br><br>
+				<p><img src="./images/icontwo.jpg">&nbsp &nbsp <b>Share what's new</b> in your life on your Timeline. <br><br>
+				<p><img src="./images/iconthree.jpg">&nbsp &nbsp <b>Find more</b> of what you're looking for with Facebook Search.
+			</div>
+
+			<!-- Right side of page -->
+			<div class="col-lg-5" style="padding-top:15px" >
+				<div>
+					<h1>Sign Up</h1>
+					<div class="signupwords">It’s quick and easy.</div>
+				</div>
+				
+
+				<form>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<input type="text" name="fname" placeholder="First name" class="form-control" id="fname">
+						</div> 
+						<div class="form-group col-md-6">
+							<input type="text" name="lname" placeholder="Last name" class="form-control" id="lname">
+						</div>
+						
+						<div class="form-group col-md-12">
+							<input type="text" class="form-control" name="numberemail" placeholder="Mobile number or email">
+						</div>
+						<div class="form-group col-md-12"> 
+							<input type="text" class="form-control" name="password" placeholder="New password"> 
+						</div>
+						
+						<div class="form-group col-md-12">
+							<span>
+								<b style="color: #90949c;">Birthday</b>
+								<div class="form-row" style="padding-top: 10px; padding-bottom: 10px">&nbsp&nbsp
+									<span>
+										<select class="form-control formcontrl" id="month">
+										<option value="Jan">Jan</option>
+									    <option value="Feb" selected>Feb</option>
+									    <option value="Mar">Mar</option>
+									    <option value="Apr">Apr</option>
+									    <option value="May">May</option>
+									    <option value="Jun">Jun</option>
+									    <option value="Jul">Jul</option>
+									    <option value="Aug">Aug</option>
+									    <option value="Sep">Sep</option>
+									    <option value="Oct">Oct</option>
+									    <option value="Nov">Nov</option>
+									    <option value="Dec">Dec</option>
+										</select>
+									</span>
+									<span>
+										<select id="day" class="form-control formcontrl" style="width: 60px">
+						        		<option value="1">1</option>
+						        		<option value="2">2</option>
+						        		<option value="3">3</option>
+						       			<option value="4">4</option>
+						        		<option value="5">5</option>
+						        		<option value="6">6</option>
+						        		<option value="7">7</option>
+						        		<option value="8">8</option>
+						        		<option value="9">9</option>
+						        		<option value="10">10</option>
+						        		<option value="11">11</option>
+						        		<option value="12">12</option>
+						        		<option value="13" selected>13</option>
+						        		<option value="14">14</option>
+						        		<option value="15">15</option>
+						        		<option value="16">16</option>
+						        		<option value="17">17</option>
+						        		<option value="18">18</option>
+						        		<option value="19">19</option>
+						        		<option value="20">20</option>
+						        		<option value="21">21</option>
+						        		<option value="22">22</option>
+						        		<option value="23">23</option>
+						        		<option value="24">24</option>
+						        		<option value="25">25</option>
+						        		<option value="26">26</option>
+						        		<option value="27">27</option>
+						        		<option value="28">28</option>
+						        		<option value="29">29</option>
+						        		<option value="30">30</option>
+						        		<option value="31">31</option>
+						    			</select>
+									</span>
+									<span>
+										<select id="year" class="form-control formcontrl">
+						        		<option value="2020">2020</option>
+						        		<option value="2019">2019</option>
+						        		<option value="2018">2018</option>
+						        		<option value="2017">2017</option>
+						        		<option value="2016">2016</option>
+						        		<option value="2015">2015</option>
+						        		<option value="2014">2014</option>
+						        		<option value="2013">2013</option>
+						        		<option value="2012">2012</option>
+						        		<option value="2011">2011</option>
+						        		<option value="2010">2010</option>
+						        		<option value="2009">2009</option>
+						        		<option value="2008">2008</option>
+						        		<option value="2007">2007</option>
+						        		<option value="2006">2006</option>
+						        		<option value="2005">2005</option>
+						        		<option value="2004">2004</option>
+						        		<option value="2003">2003</option>
+						        		<option value="2002">2002</option>
+						        		<option value="2001">2001</option>
+						        		<option value="2000">2000</option>
+						        		<option value="1999">1999</option>
+						        		<option value="1998">1998</option>
+						        		<option value="1997">1997</option>
+						        		<option value="1996">1996</option>
+						        		<option value="1995" selected>1995</option>
+						        		<option value="1994">1994</option>
+						        		<option value="1993">1993</option>
+						        		<option value="1992">1992</option>
+						        		<option value="1991">1991</option>
+						        		<option value="1990">1990</option>
+						        		<option value="1989">1989</option>
+						        		<option value="1988">1988</option>
+						        		<option value="1987">1987</option>
+						        		<option value="1986">1986</option>
+						    			</select>
+									</span>
+									<!-- This option of using an icon was dropped in preference for an image but is worthy further 
+									investigation at a later date.
+									<button style="font-size:24px;"><i class="fa fa-question-circle"></i></button> -->
+									<a href="#">&nbsp<label><img src="./images/qnicon.jpg" alt="help" title="Click for more information." role="buttom"></label></a><br>
+								</div>
+							</span>
+
+							<span style="margin-top: 20px;"><b style="color: #90949c;">Gender</b>
+							</span><br>
+							<div>								
+							    <span class="radio-inline">&nbsp
+							    	<input type="radio" name="gender" id="Female" placeholder="Female" for="female">&nbsp <label>Female &nbsp&nbsp</label>
+							    </span>
+							    <span class="radio-inline">
+							    	<input type="radio" name="gender" id="Male" placeholder="Male" for="male">&nbsp <label>Male&nbsp&nbsp&nbsp</label>
+							    </span>
+							    <span class="radio-inline">
+							    	<input type="radio" name="gender" id="Custom" placeholder="Custom" for="custom">&nbsp Custom &nbsp<a href=""><img src="./images/qnicon.jpg" alt="help" title="Click for more information."></a>
+							    </span>
+							</div>
+							<div class="userpolicy">
+							  By clicking Sign Up, you agree to our <a href="https://www.facebook.com/legal/terms/update">Terms</a>,
+							  <a href="https://www.facebook.com/about/privacy/update">Data Policy</a> and <br> <a href="https://www.facebook.com/policies/cookies/">Cookies Policy</a>. You may receive SMS notifications from us and <br> can opt out at any time.
+							</div>
+							<button type="submit" class="btn btn-primary" id="btn_signup">Sign Up</button>
+						</div>
+					</div>
+				</form>
+
+				<hr>
+				<div class="userpolicy creation"> 
+					<a href="https://www.facebook.com/pages/create/?ref_type=registration_form">Create a Page</a> for a celebrity, band or business.
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!-- Botton Section of the Facebook Website -->
+	<div class="footer">
+		<div class="container">
+			<div class="row" >
+				<div class="col-md-12 userpolicy footerlinks" >
+					<div>
+						<span>English (US)</span> &nbsp;&nbsp; 
+						<a href="https://fr-fr.facebook.com/" title="French (France)">Français (France)</a> &nbsp;&nbsp; 
+						<title><a href="https://ar-ar.facebook.com/" title="Arabic">العربية</a></title> &nbsp;&nbsp; 
+						<a href="https://pt-br.facebook.com/" title="Portuguese (Brazil)">Português (Brasil) </a> &nbsp;&nbsp; 
+						<a href="https://es-la.facebook.com/" title="Spanish">Español</a> &nbsp;&nbsp; 
+						<a href="https://tr-tr.facebook.com/" title="Turkish">Türkçe</a> &nbsp;&nbsp; 
+						<a href="https://sw-ke.facebook.com/" title="Swahili">Kiswahili</a> &nbsp;&nbsp; 
+						<a href="https://de-de.facebook.com/" title="German">Deutsch</a> &nbsp;&nbsp; 
+						<a href="https://zh-cn.facebook.com/" title="Simplified Chinese (China)">中文(简体)</a>&nbsp; &nbsp; 
+						<a href="https://it-it.facebook.com/" title="Italian">Italiano</a> &nbsp;&nbsp; 
+						<a href="https://hi-in.facebook.com/" title="Hindi">हिन्दी</a> &nbsp;&nbsp;&nbsp; <a href="#"><img src="images/plusicon.jpg" alt="More languages" title="Show more languages"></a> <a href="">
+						<!-- <span id="add_lang">+</span></a> Was an idea on how to achieve the '+' sign -->
+					</div>
+					<div style="margin-top: 5px; border-top: 1px solid grey; padding-top: 5px;">
+					
+						<a href="https://www.facebook.com/r.php" title="Sign Up for Facebook">Sign Up</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/login/" title="Log into Facebook">Log In</a> &nbsp;&nbsp; 
+						<a href="https://messenger.com/" title="Check out Messenger.">Messenger</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/lite/" title="Facebook Lite for Android.">Facebook Lite</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/watch/" title="Browse our Watch videos.">Watch</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/directory/people/" title="Browse our people directory.">People</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/directory/pages/" title="Browse our pages directory.">Pages</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/pages/category/">Page Categories</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/places/" title="Check out popular places on Facebook.">Places</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/games/" title="Check out Facebook games.">Games</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/directory/places/" title="Browse our places directory.">Locations</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/marketplace/" title="Buy and sell on Facebook Marketplace.">Marketplace</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/directory/groups/" title="Browse our Groups directory.">Groups</a> &nbsp;&nbsp; 
+						<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2F&h=AT2HlkWWpw9jre8wHvR17XbFMLTXW33WBrgQIQujxJej69FdOFFuXvJRVbOOoiNB5Yv_UiolLuwZcSQDvWA8jc9wK9Xy5_X8ovHEcdz1H1gtSm_JfFOhTKEd54ya46vHbHwhDBaLDMPJfoumXQknKRg_xA" title="Check out Instagram">Instagram</a><br> 
+					
+					 	<!-- <div class="row" style="pattind-top: 0px"> -->
+						<a href="https://www.facebook.com/local/lists/245019872666104/" title="Browse our Local Lists directory.">Local</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/fundraisers/" title="Donate to worthy causes.">Fundraisers</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/biz/directory/" title="Browse our Facebook Services directory.">Services</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/facebook" title="Read our blog, discover the resource centre and find job opportunities.">About</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&extra_1=auto" title="Advertise on Facebook.">Create Ad</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/pages/create/?ref_type=site_footer" title="Create a Page.">Create Page</a> &nbsp;&nbsp; 
+						<a href="https://developers.facebook.com/?ref=pf" title="Develop on our platform">Developers</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/careers/?ref=pf" title="Make your next career move to our awesome company.">Careers</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/privacy/explanation" title="Learn about your privacy and Facebook.">Privacy</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/policies/cookies/" title="Learn about cookies and Facebook.">Cookies</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/help/568137493302217" title="Learn about Ad Choices.">Ad Choices<img src="images/adchoicesicon.jpg" alt="Learn more" title="Learn about Ad Choices."></a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/policies?ref=pf" title="Review our terms and policies.">Terms</a> &nbsp;&nbsp; 
+						<a href="https://www.facebook.com/help/?ref=pf" title="Visit our Help Center.">Help</a>
+						<br><br>
+						<span style="font-size: 0.7rem;">Facebook &copy 2020</span><br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>
