@@ -1,20 +1,28 @@
 /*CSS File for Facebook assignment*/
 body {
-	background-color: #edf0f5;
+  background-color: #edf0f5;
+  /* font-family: "Times New Roman", Times, serif; Find the right font style for the page  */
 }
 
 .app-nav-bar {
 	background-color: #3b5998;
-	height: 75px;
+	height: auto;
 	width: 100%;
-	border-bottom:1px solid #133783;
+  border-bottom:1px solid #133783;
+  padding-top: 10px;
 }
 
 .footer {
   background-color: #fff;
-  height: 150px;
+  height: 160px;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 40px;
+}
+
+/* Create white spaces on the sides of the browser window */
+.widthpadding {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 /*Login button in the top navbar */
@@ -29,7 +37,6 @@ body {
   color: #333;
   font-family: 'Freight Sans', Helvetica, Arial, sans-serif;
   font-size: 19px;
-  /*line-height: 1.26;*/
   margin-bottom: 20px;
 }
 
@@ -82,19 +89,25 @@ this new colour*/
 }
 
 .button {
-  	/*background-color: #3b5998; /* Green */
   	border: none;
   	color: #3b5998;
-  	/*padding: 15px 32px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 16px;
-  	margin: 4px 2px;
-  	cursor: pointer;*/
 }
 
 .button1 {
   padding: 4px; 
   border-radius: 25%;
+}
+
+.Table {
+  display: table;
+}
+.Row {
+  display: table-row;
+}
+.Cell {
+  display: table-cell;
+  /*border: solid;*/          /*Remove borders from the table*/
+  border-width: thin;
+  padding-left: 5px;
+  padding-right: 5px;
 }
