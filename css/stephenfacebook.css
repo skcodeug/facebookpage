@@ -9,7 +9,7 @@ body {
 	height: auto;
 	width: 100%;
   border-bottom:1px solid #133783;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .footer {
@@ -32,7 +32,6 @@ body {
   color: #fff;
   padding: 0px;
 }
-
 .signupwords {
   color: #333;
   font-family: 'Freight Sans', Helvetica, Arial, sans-serif;
@@ -89,25 +88,39 @@ this new colour*/
 }
 
 .button {
-  	border: none;
-  	color: #3b5998;
-}
-
-.button1 {
-  padding: 4px; 
-  border-radius: 25%;
+  margin: auto; 
+  border: 1px solid #29487d; 
+  background-color: #4267b2 ; 
+  border-radius: 2px;
+  width: 55px; 
+  height: 22px; 
+  color: #fff; 
+  font-size: small; 
 }
 
 .Table {
   display: table;
 }
+
 .Row {
   display: table-row;
 }
+
 .Cell {
   display: table-cell;
   /*border: solid;*/          /*Remove borders from the table*/
   border-width: thin;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.input-field {
+  width: 145px; 
+  margin-right: 5px; 
+  height: 25px; 
+  background-color: #e9eef7;
+}
+
+.textcolour {
+  color: #666;
 }
